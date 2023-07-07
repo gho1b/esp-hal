@@ -24,7 +24,7 @@ PROVIDE(esp_rom_md5_init = 0x40000614);
 PROVIDE(esp_rom_md5_update = 0x40000618);
 PROVIDE(esp_rom_md5_final = 0x4000061c);
 
-PROVIDE (gpio_matrix_in=0x400005a0)
-PROVIDE (gpio_matrix_out=0x400005a4)
-PROVIDE ( esp_rom_gpio_connect_in_signal  = gpio_matrix_in );
-PROVIDE ( esp_rom_gpio_connect_out_signal = gpio_matrix_out );
+PROVIDE (gpio_matrix_in=0x400005a0);
+PROVIDE (gpio_matrix_out=0x400005a4);
+PROVIDE (esp_rom_gpio_connect_in_signal  = gpio_matrix_in);
+PROVIDE (esp_rom_gpio_connect_out_signal = gpio_matrix_out);

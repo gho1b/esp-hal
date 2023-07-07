@@ -14,7 +14,10 @@ PROVIDE(esp_rom_spi_cmd_config = 0x4000087c);
 PROVIDE(Cache_Suspend_DCache = 0x400018b4 );
 PROVIDE(Cache_Resume_DCache = 0x400018c0 );
 PROVIDE(rom_config_data_cache_mode = 0x40001a28 );
-PROVIDE(rom_config_instruction_cache_mode = 0x40001a1c );
+PROVIDE(rtc_get_reset_reason = 0x4000057c);
+PROVIDE(rom_config_instruction_cache_mode = 0x40001a1c);
+PROVIDE(software_reset = 0x400006d8);
+PROVIDE(software_reset_cpu = 0x400006e4);
 PROVIDE(ets_efuse_get_wp_pad = 0x40001fa4);
 
 PROVIDE(esp_rom_crc32_be = 0x40001ca4);
@@ -32,8 +35,8 @@ PROVIDE (esp_rom_opiflash_exec_cmd = 0x400008b8);
 PROVIDE( esp_rom_spi_set_dtr_swap_mode = 0x4000093c );
 PROVIDE( esp_rom_opiflash_pin_config = 0x40000894 );
 
-PROVIDE (gpio_matrix_in=0x40001a94)
-PROVIDE (gpio_matrix_out=0x40001aa0)
-PROVIDE ( esp_rom_gpio_connect_in_signal  = gpio_matrix_in );
-PROVIDE ( esp_rom_gpio_connect_out_signal = gpio_matrix_out );
+PROVIDE (gpio_matrix_in=0x40001a94);
+PROVIDE (gpio_matrix_out=0x40001aa0);
+PROVIDE (esp_rom_gpio_connect_in_signal  = gpio_matrix_in);
+PROVIDE (esp_rom_gpio_connect_out_signal = gpio_matrix_out);
 

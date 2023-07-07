@@ -11,6 +11,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+### Changed
+
+- Add provide function that needed by psram::init in `ld/room-functions.x` in packages esp32c2-hal, esp32s3-hal, esp32c6-hal, esp32h2-hal, esp32s2-hal, and esp32s3-hal
+
+### Fixed
+
+### Removed
+
+## [Unreleased]
+
+### Added
+
 - Add initial LP-IO support for ESP32-C6 (#639)
 
 ### Changed
