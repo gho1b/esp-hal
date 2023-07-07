@@ -16,3 +16,9 @@ PROVIDE(esp_rom_crc8_le = 0x40000804);
 PROVIDE(esp_rom_mbedtls_md5_starts_ret = 0x40002be4);
 PROVIDE(esp_rom_mbedtls_md5_update_ret = 0x40002be8);
 PROVIDE(esp_rom_mbedtls_md5_finish_ret = 0x40002bec);
+
+PROVIDE (gpio_matrix_in=0x4000078c)
+PROVIDE (gpio_matrix_out=0x40000790)
+PROVIDE ( esp_rom_gpio_connect_in_signal  = gpio_matrix_in );
+PROVIDE ( esp_rom_gpio_connect_out_signal = gpio_matrix_out );
+

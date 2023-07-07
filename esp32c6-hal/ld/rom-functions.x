@@ -23,3 +23,8 @@ PROVIDE(esp_rom_crc8_le = 0x40000760);
 PROVIDE(esp_rom_md5_init = 0x4000074c);
 PROVIDE(esp_rom_md5_update = 0x40000750);
 PROVIDE(esp_rom_md5_final = 0x40000754);
+
+PROVIDE (gpio_matrix_in=0x400006d8)
+PROVIDE (gpio_matrix_out=0x400006dc)
+PROVIDE ( esp_rom_gpio_connect_in_signal  = gpio_matrix_in );
+PROVIDE ( esp_rom_gpio_connect_out_signal = gpio_matrix_out );
